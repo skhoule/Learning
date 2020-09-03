@@ -22,7 +22,7 @@ weatherform.addEventListener('submit', (e) => {
                 return
             }
             messageOne.textContent = data.location;
-            messageTwo.textContent = `It's ${data.forecast.temperature}. ${data.forecast.summary}`;
+            messageTwo.textContent = `It's ${data.forecast.temperature}. ${data.forecast.summary}. The high is ${data.forecast.temperatureHigh} and the low is ${data.forecast.temperatureLow}.`;
         })
     })
 })
